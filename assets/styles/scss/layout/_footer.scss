@@ -1,0 +1,29 @@
+footer {
+  background-color: $ternary-color;
+
+  .footer-nav {
+    padding: 100px 0;
+    @media (max-width: 768px) {
+     padding: 50px 0;
+    }
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__item {
+      @media (max-width: 768px) {
+        margin: 10px 0;
+      }
+      a {
+        text-transform: uppercase;
+        color: $primary-color;
+      }
+    }
+  }
+}

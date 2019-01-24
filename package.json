@@ -1,0 +1,24 @@
+{
+  "name": "wine-art",
+  "version": "1.0.0",
+  "description": "test project",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass assets/styles/scss/main.scss dist/css/main.css -w",
+    "compile:sass": "node-sass assets/styles/scss/main.scss dist/css/main.css",
+    "compress:css": "node-sass dist/css/main.css dist/css/main.css --output-style compressed",
+    "concat:css": "concat -o dist/css/vendors.css assets/styles/css/all.min.css assets/styles/css/bootstrap.min.css",
+    "build": "npm-run-all compile:sass compress:css"
+  },
+  "author": "Stefan Djokic",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.2.1",
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5",
+    "concat": "^1.0.3"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.6.3"
+  }
+}

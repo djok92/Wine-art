@@ -1,0 +1,42 @@
+.product-info {
+  padding: 100px 0 50px 0;
+}
+
+.product {
+  text-align: center;
+  margin: 40px 0;
+
+  &__img {
+    max-height: 400px;
+  }
+
+  &__name {
+    font-size: 1.8rem;
+    color: $secondary-color;
+  }
+
+  &__location {
+    font-size: 1.4rem;
+    color: $ternary-color;
+    position: relative;
+    padding-bottom: 10px;
+
+    &::after {
+      content: '';
+      width: 65px;
+      height: 1px;
+      background-color: $secondary-color;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+
+  &__structure {
+    font-size: 1.2rem;
+    color: $ternary-color;
+    margin-top: 10px;
+  }
+}
